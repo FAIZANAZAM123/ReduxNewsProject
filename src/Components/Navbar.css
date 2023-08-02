@@ -1,0 +1,81 @@
+.navbar {
+    transition: all 0.4s ease;
+}
+
+
+
+.nav-link {
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+ .nav-link:hover {
+    color: #FFD700;
+    transform: scale(0.9);
+} 
+
+.navbar-brand {
+    transition: all 0.3s ease;
+    font-size: 1.5em;
+}
+
+.navbar-brand:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+.News {
+    color: #FFD700;
+}
+
+.World {
+    color: #fff;
+}
+
+.form-control {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+.form-control:focus {
+    border-color: #FFD700;
+    box-shadow: 0px 0px 5px #FFD700;
+    
+}
+
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 2px;
+width: 100%;
+    background: #FFD700;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+} 
+
+.nav-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+@media(max-width: 992px) {
+    .nav-item{
+        width:fit-content;
+    }
+   
+    .nav-link:hover {
+        color: #FFD700;
+        transform: scalex(1.1);
+    } 
+    .logo{
+        margin-top: 5px;
+    }
+    
+}
