@@ -32,19 +32,18 @@
     color: #fff;
 }
 
-.form-control {
+.formcon {
     transition: all 0.3s ease;
     border-radius: 15px;
 }
-.form-control:focus {
-    border-color: #FFD700;
-    box-shadow: 0px 0px 5px #FFD700;
-    
-}
 
+#navbarSupportedContent{
+    width: fit-content;
+}
 
 .nav-item {
     position: relative;
+    
 }
 
 .nav-item::after {
@@ -77,5 +76,74 @@ width: 100%;
     .logo{
         margin-top: 5px;
     }
+  
     
 }
+.bi{
+    height: 100px;
+}
+.sticky-top {
+    position: sticky;
+    
+}
+.hello2{
+  
+  display: none;
+
+
+}
+.formcontrol1{
+    display: none;
+    border-radius: 15px;
+    width: 40%;
+    /* margin-top: 20px;; */
+   /* outline: 1px solid black; */
+   transition: all 0.3s ease;
+   border-radius: 15px;
+   /* border:2px solid grey; */
+   /* text-align: center; */
+   
+
+}
+
+
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1215px) {
+    .formcon{
+        display: none;  
+        /* visibility: hidden; */
+   }
+   .hello2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to right, #667eea, #764ba2); */
+    position:sticky;
+    top:59px;
+   height: 42px;
+   }
+   .formcontrol1{
+    display:block;
+    position:sticky;
+   }
+ ul{
+    display: flex;
+    justify-content: space-evenly;
+ }
+  }
+ 
+ 
+  
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    .hello2{
+        display: none;
+       
+    }
+    .formcontrol1{
+        display: none;  
+        
+   }
+ 
+  }
